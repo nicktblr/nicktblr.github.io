@@ -8,9 +8,14 @@ div
 	margin: 0 0;
 }
 
+h1,h2
+{
+	color: #404040;
+}
+
 h1
 {
-	font-size: 75px;
+	font-size: 7.5em;
 	text-align: justify;
 	margin: 0 0;
 	color: #404040;
@@ -18,7 +23,7 @@ h1
 
 h2
 {
-	font-size: 35px;
+	font-size: 2.5em;
 	margin: 0 0;
 	color: #2185D0;
 }
@@ -76,40 +81,15 @@ p
 	text-align: center;
 }
 
-.page
-{
-	height: 100%;
-	margin: auto auto;
-}
-
-.page-header
-{
-	height: 25%;
-}
-
-.page-body
-{
-	overflow-y: auto;
-	height: 70%;
-}
-
-.sidebar .item
+.item
 {
 	height: 15%;
 	font-size: 1.5em;
 }
 
-.sidebar .top-aligned .item.selected
-{
-	background: rgba(255, 255, 255, 0.08);
-}
-
 #menu-button
 {
-	width: 50px;
-	height: 50px;
 	margin-top: 1%;
-	overflow: hidden;
 }
 
 #menu-button i
@@ -122,4 +102,10 @@ p
 {
 	display: inline-block;
 	height: 100%;
+}
+
+#intro
+{
+	height: 100%;
+	margin: auto auto;
 }
