@@ -71,9 +71,6 @@
 		<div class="content-body">
 			<p v-for="(item, index) in body">{{ item.text }}</p>
 		</div>
-		<div class="next-page">
-			<i class="huge link chevron down icon"></i>
-		</div>
 	</div>
 
 </div>
@@ -106,9 +103,13 @@
 
 	function gotoPage(page)
 	{
+	    var offset = page.offset().top
+	    if($(window).height() > $(window).width()){				// Check if portrait
+	        offset -= 0.099*$(window).height()
+		}
         $('html, body')
             .animate({
-                scrollTop: page.offset().top-0.099*$(window).height()}, 'slow', 'swing', function() {});
+                scrollTop: offset}, 'slow', 'swing', function() {});
     }
 
 </script>
